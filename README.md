@@ -1,8 +1,8 @@
-# Next.js Better Auth Demo
+# Next.js Better Auth Template
 
-A demonstration project showcasing how to implement authentication in Next.js using Better Auth. This project serves as a practical example and learning resource for developers who want to understand how to build secure authentication systems with email verification, OAuth integration, and password management.
+A starter template for implementing authentication in Next.js using Better Auth. This template is designed as a practical foundation for developers building secure authentication systems, featuring built-in support for email verification, OAuth integration, and password management. Ideal for jumpstarting production-ready apps or learning modern auth workflows in Next.js.
 
-![Next.js Better Auth Demo](public/image.png)
+![Next.js Better Auth Template](public/image.png)
 
 ## Features
 
@@ -37,13 +37,11 @@ A demonstration project showcasing how to implement authentication in Next.js us
 4. Enter a name for your app (e.g., "Next.js Auth")
 5. Copy the password and use it as your `EMAIL_PASS` in the `.env` file
 
-4. Run database migrations:
-
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/marrrkkk/nextjs-better-auth-demo.git
+git clone https://github.com/marrrkkk/nextjs-better-auth-template.git
 cd nextjs-better-auth
 ```
 
@@ -52,15 +50,26 @@ cd nextjs-better-auth
 npm install
 ```
 
-3. Set up environment variables:
-Create a `.env` file in the root directory with the following variables:
+3. Set up environment variables by renaming `.env.example` to `.env` or `.env.local` and fill in variables:
 ```env
 BETTER_AUTH_SECRET=
-BETTER_AUTH_URL=http://localhost:3000
+BETTER_AUTH_URL=http://localhost:3000 #Base URL of your app
+
 DATABASE_URL=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+
+EMAIL_FROM=
+EMAIL_USER=
+EMAIL_PASS=
+EMAIL_VERIFICATION_CALLBACK_URL=http://localhost:3000/email-verified
 ```
 
-4. Run database migrations:
+5. Run database migrations:
 ```bash
 npx drizzle-kit generate
 npx drizzle-kit migrate
