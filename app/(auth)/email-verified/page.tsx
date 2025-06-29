@@ -18,7 +18,7 @@ export default function EmailVerifiedPage() {
         </CardHeader>
         <CardContent className="pt-0">
           <Button asChild className="w-full">
-            <Link href="/login">Continue to Login</Link>
+            <Link href="/sign-in">Continue to Login</Link>
           </Button>
         </CardContent>
       </Card>
