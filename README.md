@@ -39,10 +39,14 @@ A starter template for implementing authentication in Next.js using Better Auth.
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository or install with npm:
 ```bash
 git clone https://github.com/marrrkkk/nextjs-better-auth-template.git
 cd nextjs-better-auth
+```
+
+```bash
+npx nextjs-better-auth-template
 ```
 
 2. Install dependencies:
