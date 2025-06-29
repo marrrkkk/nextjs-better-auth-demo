@@ -1,4 +1,4 @@
-import { auth } from "@/lib/auth" // Adjust import path based on your better-auth setup
+import { auth } from "@/lib/auth"
 import { headers } from "next/headers"
 import { redirect } from "next/navigation"
 import UserProfileCard from "@/components/user-profile-card"

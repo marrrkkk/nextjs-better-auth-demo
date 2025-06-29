@@ -28,7 +28,7 @@ export default function SignUpForm() {
       toast("Error", { description: "Password do not match" })
       return
     }
-
+    e.currentTarget.reset()
     try {
       await authClient.signUp.email(
         {
@@ -43,7 +43,6 @@ export default function SignUpForm() {
 						description:
 							"Your account has been created. Check your email for a verification link.",
 					});
-          e.currentTarget.reset()
           },
           onError: (ctx) => {
             toast("Error", { description: ctx.error.message })
